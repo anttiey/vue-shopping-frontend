@@ -22,7 +22,8 @@ export default {
     const check = () => {
       axios.get("/api/account/check").then(({ data }) => {
         console.log(data);
-        store.commit("setAccount", data || 0);
+        store.commit("setToken", data.id || 0);
+        store.commit("setAdmin", data.admin || 0);
       })
     };
 

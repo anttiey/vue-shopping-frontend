@@ -5,13 +5,17 @@ const store = createStore({
   state () {
     return {
       account: {
-        id: 0
-      }
+        token: null,
+        role: null,
+      } 
     }
   },
   mutations: {
-    setAccount(state, payload) {
-      state.account.id = payload;
+    setToken(state, payload) {
+      state.account.token = payload;
+    },
+    setAdmin(state, payload) {
+      state.account.role = payload;
     }
   }
 })

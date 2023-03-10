@@ -37,7 +37,7 @@ import router from "@/scripts/router";
 
       const submit = () => {
         axios.post("/api/account/login", state.form).then((res) => {
-          store.commit('setAccount', res.data);
+          store.commit('setToken', res.data);
           console.log(res.data);
           window.alert("로그인 성공!");
           router.push({path: "/"});

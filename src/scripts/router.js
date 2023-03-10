@@ -3,6 +3,7 @@ import Login from '@/pages/Login.vue'
 import Cart from '@/pages/Cart.vue'
 import Buy from '@/pages/Buy.vue'
 import Success from '@/pages/Success.vue'
+import Mypage from '@/pages/Mypage.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
@@ -10,7 +11,8 @@ const routes = [
   { path: '/login', component: Login },
   { path: '/cart', component: Cart },
   { path: '/buy', component: Buy },
-  { path: '/success', component: Success }
+  { path: '/success', component: Success },
+  { path: '/mypage', component: Mypage }
 ]
 
 const router = createRouter({
